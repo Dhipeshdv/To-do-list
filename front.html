@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="mid.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do-List</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="New Task" required>
+            <select id="priorityInput">
+                <option value="1">1 Hour</option>
+                <option value="2">2 Hours</option>
+                <option value="3">3 Hours</option>
+                <option value="4">4 Hours</option>
+                <option value="5">5 Hours</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="taskList"></ul>
+        
+        <div id="timer-container">
+            <h2>Time Left To Complete Above Tasks</h2>
+            <div id="timer-display">00:00:00</div>
+        </div>
+    </div>
+    <script src="back.js"></script>
+</body>
+</html>
